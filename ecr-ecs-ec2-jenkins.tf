@@ -18,11 +18,11 @@ provider "github" {
 data "aws_caller_identity" "current" {}
 
 locals {
-  github-email = "gakcin@gmail.com"                      # you need to change this line
-  github-username = "gakcin"                              # you need to change this line
-  github-token = "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"      # you need to change this line
-  key_pair="Remote-aws"            # you need to change this line
-  pem_key_address = "~/Desktop/certificates/Remote-aws.pem"              # you need to change this line
+  github-email = "yourmail adress"                      # you need to change this line
+  github-username = "your user name"                              # you need to change this line
+  github-token = "your github token"      # you need to change this line
+  key_pair="your aws key pair without .pem"            # you need to change this line
+  pem_key_address = "local aws .pem file path"              # you need to change this line
 }
 
 resource "github_repository" "githubrepo" {
